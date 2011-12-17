@@ -5634,7 +5634,6 @@
                 <module>appclient</module>
                 <module>build</module>
                 <module>build-config</module>
-                <module>arquillian</module>
                 <module>cli</module>
                 <module>client/ejb</module>
                 <module>client/jms</module>
@@ -5672,6 +5671,18 @@
                 <module>webservices</module>
                 <module>weld</module>
                 <module>xts</module>
+            </modules>
+        </profile>
+
+        <profile>
+            <id>testsuite</id>
+            <activation>
+                <property>
+                    <name>allTests</name>
+                </property>
+            </activation>
+            <modules>
+                <module>arquillian</module>
                 <module>testsuite/shared</module>
                 <module>testsuite</module>
             </modules>
