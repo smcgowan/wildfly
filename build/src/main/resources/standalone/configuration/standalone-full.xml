@@ -150,7 +150,7 @@
                     <keepalive-time time="100" unit="milliseconds"/>
                 </thread-pool>
             </thread-pools>
-            <iiop enable-by-default="true" use-qualified-name="true"/>
+            <iiop enable-by-default="false" use-qualified-name="false"/>
         </subsystem>
         <subsystem xmlns="urn:jboss:domain:infinispan:1.1" default-cache-container="hibernate">
             <cache-container name="hibernate" default-cache="local-query">
