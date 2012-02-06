@@ -5942,8 +5942,11 @@
                 <module>arquillian</module>
                 <module>cli</module>
                 <module>client/ejb</module>
+<<<<<<< HEAD
                 <module>client/jms</module>
                 <module>client/shade</module>
+=======
+>>>>>>> Add EJB client bom
                 <module>clustering</module>
                 <module>cmp</module>
                 <module>configadmin</module>

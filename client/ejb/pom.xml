@@ -30,13 +30,20 @@
         <groupId>org.jboss.as</groupId>
         <artifactId>jboss-as-parent</artifactId>
         <version>7.1.0.Final-SNAPSHOT</version>
+<<<<<<< HEAD
         <relativePath>../../pom.xml</relativePath>
+=======
+>>>>>>> Add EJB client bom
     </parent>
 
     <groupId>org.jboss.as</groupId>
     <artifactId>jboss-as-ejb-client-bom</artifactId>
     <packaging>pom</packaging>
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> Add EJB client bom
     <name>JBoss Application Server: EJB Client BOM</name>
 
     <description>
