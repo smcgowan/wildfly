@@ -20,8 +20,13 @@
             <xsl:attribute name="name"><xsl:value-of select="$connectionName"/></xsl:attribute>
             <xsl:attribute name="outbound-socket-binding-ref">binding-<xsl:value-of select="$connectionName"/></xsl:attribute>
             <r:properties>
+<<<<<<< HEAD
                 <r:option name="SASL_POLICY_NOANONYMOUS" value="false"/>
                 <r:option name="SSL_ENABLED" value="false"/>
+=======
+                <r:property name="SASL_POLICY_NOANONYMOUS" value="false"/>
+                <r:property name="SSL_ENABLED" value="false"/>
+>>>>>>> renaming connection-creation-options to properties, JBQA-5190
             </r:properties>
         </r:remote-outbound-connection>
     </xsl:variable>
