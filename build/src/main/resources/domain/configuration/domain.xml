@@ -135,7 +135,7 @@
                         <keepalive-time time="100" unit="milliseconds"/>
                     </thread-pool>
                 </thread-pools>
-                <iiop enable-by-default="true" use-qualified-name="true"/>
+                <iiop enable-by-default="false" use-qualified-name="false"/>
             </subsystem>
             <subsystem xmlns="urn:jboss:domain:infinispan:1.1" default-cache-container="hibernate">
                 <cache-container name="hibernate" default-cache="local-query">
@@ -157,8 +157,8 @@
             </subsystem>
             <subsystem xmlns="urn:jboss:domain:jacorb:1.1"/>
             <subsystem xmlns="urn:jboss:domain:jaxr:1.0">
-                <connection-factory jndi-name="java:jboss/jaxr/ConnectionFactory"/>
-                <juddi-server publish-url="http://localhost:8080/juddi/publish" query-url="http://localhost:8080/juddi/query"/>
+                 <connection-factory jndi-name="java:jboss/jaxr/ConnectionFactory"/>
+                 <juddi-server publish-url="http://localhost:8080/juddi/publish" query-url="http://localhost:8080/juddi/query"/>
             </subsystem>
             <subsystem xmlns="urn:jboss:domain:jaxrs:1.0"/>
             <subsystem xmlns="urn:jboss:domain:jca:1.1">
