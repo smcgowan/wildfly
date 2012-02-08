@@ -19,7 +19,7 @@
 * Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
 * 02110-1301 USA, or see the FSF site: http://www.fsf.org.
 */
-package org.jboss.as.test.integration.management.util;
+package org.jboss.as.test.integration.management.jca;
 
 import java.util.Enumeration;
 import java.util.Properties;
@@ -163,8 +163,6 @@ public class ComplexPropertiesParseUtils {
         params.put("wrap-xa-resource", "true");
         //security
         params.put("application", "true");
-        params.put("security-domain-and-application", "HsqlDbRealm1");
-        params.put("security-domain", "HsqlDbRealm");
         //validation
         params.put("background-validation", "true");
         params.put("background-validation-millis", "5000");
@@ -191,7 +189,7 @@ public class ComplexPropertiesParseUtils {
     public static  Properties raAdminProperties(){
         Properties params = new Properties();
         //attributes
-        params.put("use-java-context", "false");
+        params.put("use-java-context", "true");
         params.put("class-name", "Class3");
         params.put("jndi-name", "java:jboss/Name3");
         params.put("enabled", "true");
