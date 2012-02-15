@@ -371,8 +371,6 @@
                         </entries>
                     </pooled-connection-factory>
                 </jms-connection-factories>
-
-                <jms-destinations/>
             </hornetq-server>
         </subsystem>
         <subsystem xmlns="urn:jboss:domain:modcluster:1.0">
