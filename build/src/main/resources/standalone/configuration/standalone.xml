@@ -53,12 +53,6 @@
 
     <profile>
         <subsystem xmlns="urn:jboss:domain:logging:1.1">
-            <console-handler name="CONSOLE">
-                <level name="INFO"/>
-                <formatter>
-                    <pattern-formatter pattern="%d{HH:mm:ss,SSS} %-5p [%c] (%t) %s%E%n"/>
-                </formatter>
-            </console-handler>
             <periodic-rotating-file-handler name="FILE">
                 <formatter>
                     <pattern-formatter pattern="%d{HH:mm:ss,SSS} %-5p [%c] (%t) %s%E%n"/>
@@ -85,7 +79,6 @@
             <root-logger>
                 <level name="INFO"/>
                 <handlers>
-                    <handler name="CONSOLE"/>
                     <handler name="FILE"/>
                 </handlers>
             </root-logger>
@@ -109,7 +102,7 @@
             </datasources>
         </subsystem>
         <subsystem xmlns="urn:jboss:domain:deployment-scanner:1.1">
-            <deployment-scanner path="deployments" relative-to="jboss.server.base.dir" scan-interval="5000"/>
+            <deployment-scanner path="deployments" relative-to="jboss.server.base.dir" scan-interval="0"/>
         </subsystem>
         <subsystem xmlns="urn:jboss:domain:ee:1.0"/>
         <subsystem xmlns="urn:jboss:domain:ejb3:1.2">
