@@ -79,12 +79,32 @@
             <optional>true</optional>
         </dependency>
         <dependency>
+            <groupId>org.jboss.osgi.deployment</groupId>
+            <artifactId>jbosgi-deployment</artifactId>
+        </dependency>
+        <dependency>
             <groupId>org.jboss.osgi.framework</groupId>
             <artifactId>jbosgi-framework-core</artifactId>
         </dependency>
         <dependency>
             <groupId>org.jboss.osgi.repository</groupId>
             <artifactId>jbosgi-repository-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.osgi.repository</groupId>
+            <artifactId>jbosgi-repository-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.osgi.resolver</groupId>
+            <artifactId>jbosgi-resolver-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.osgi.resolver</groupId>
+            <artifactId>jbosgi-resolver-metadata</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.osgi.vfs</groupId>
+            <artifactId>jbosgi-vfs</artifactId>
         </dependency>
         <dependency>
             <groupId>org.osgi</groupId>
