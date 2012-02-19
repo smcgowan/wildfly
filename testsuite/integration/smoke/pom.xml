@@ -57,6 +57,7 @@
                                     <includes>
                                         <include>*-users.properties</include>
                                         <include>*-roles.properties</include>
+                                        <include>standalone-full-test.xml</include>
                                     </includes>
                                 </resource>
                             </resources>
@@ -138,7 +139,7 @@
 
                                     <!-- Parameters to test cases. -->
                                     <systemPropertyVariables>
-                                        <jboss.server.config.file.name>standalone-full.xml</jboss.server.config.file.name>
+                                        <jboss.server.config.file.name>standalone-full-test.xml</jboss.server.config.file.name>
                                         <jboss.inst>${basedir}/target/jbossas-smoke</jboss.inst>
                                     </systemPropertyVariables>
                                 </configuration>
