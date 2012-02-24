@@ -11,7 +11,7 @@ import org.jboss.msc.service.StartException;
 import org.jboss.msc.service.StopContext;
 import org.jboss.msc.value.InjectedValue;
 
-public class MyService implements Service<String> {
+public class MyService implements Service<Environment> {
 
     public static final ServiceName SERVICE_NAME = ServiceName.JBOSS.append("test", "myservice");
     
@@ -23,11 +23,11 @@ public class MyService implements Service<String> {
     }
 
     @Override
-    public String getValue() {
+    public Environment getValue() {
         if (!this.started.get()) {
             throw new IllegalStateException();
         }
-        return env.getValue().getNodeName();
+        return new Environment(env.getValue().getNodeName());
     }
 
     @Override

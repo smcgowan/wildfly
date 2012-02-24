@@ -16,8 +16,8 @@ public class MyServiceServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String node = (String) CurrentServiceContainer.getServiceContainer().getService(MyService.SERVICE_NAME).getValue();
-        resp.setHeader("node", node);
+        Environment env = (Environment) CurrentServiceContainer.getServiceContainer().getService(MyService.SERVICE_NAME).getValue();
+        resp.setHeader("node", env.getNodeName());
         resp.getWriter().write("Success");
     }
 }
