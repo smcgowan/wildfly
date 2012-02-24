@@ -117,7 +117,7 @@
 
                                     <!-- Parameters to test cases. -->
                                     <systemPropertyVariables>
-                                        <jboss.server.config.file.name>standalone-full-test.xml</jboss.server.config.file.name>
+                                        <jboss.server.config.file.name>standalone-full.xml</jboss.server.config.file.name>
                                         <jboss.inst>${basedir}/target/jbossas</jboss.inst>
                                         <!-- Needed for the IIOP tests-->
                                         <com.sun.CORBA.ORBUseDynamicStub>true</com.sun.CORBA.ORBUseDynamicStub>
