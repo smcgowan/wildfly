@@ -12,7 +12,6 @@ import org.jboss.as.controller.PathAddress;
 import org.jboss.as.controller.descriptions.ModelDescriptionConstants;
 import org.jboss.dmr.ModelNode;
 import org.jboss.jca.core.api.connectionmanager.pool.Pool;
-import org.jboss.jca.core.api.management.ConnectionFactory;
 import org.jboss.jca.core.api.management.Connector;
 import org.jboss.jca.core.api.management.DataSource;
 import org.jboss.jca.core.api.management.ManagementRepository;
@@ -154,15 +153,13 @@ public abstract class PoolOperations implements OperationStepHandler {
             ArrayList<Pool> result = new ArrayList<Pool>(repository.getConnectors().size());
             if (repository.getConnectors() != null) {
                 for (Connector c : repository.getConnectors()) {
-                    if (c.getConnectionFactories() == null || c.getConnectionFactories().size() == 0)
-                        continue;
-                    for (ConnectionFactory cf : c.getConnectionFactories()) {
-                        if (cf != null && cf.getPool() != null &&
-                                jndiName.equalsIgnoreCase(cf.getJndiName())) {
-                            result.add(cf.getPool());
-                        }
-
+                    if (jndiName.equalsIgnoreCase(c.getUniqueId())) {
+                        if (c.getConnectionFactories() == null || c.getConnectionFactories().get(0) == null
+                                || c.getConnectionFactories().get(0).getPool() == null)
+                            continue;
+                        result.add(c.getConnectionFactories().get(0).getPool());
                     }
+
                 }
             }
             return result;

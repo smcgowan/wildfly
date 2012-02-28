@@ -26,11 +26,11 @@ package org.jboss.as.test.smoke.embedded.mgmt.resourceadapter;
 import static org.jboss.as.controller.descriptions.ModelDescriptionConstants.OP;
 import static org.jboss.as.controller.descriptions.ModelDescriptionConstants.OP_ADDR;
 
-import static org.jboss.as.test.integration.management.jca.ComplexPropertiesParseUtils.checkModelParams;
-import static org.jboss.as.test.integration.management.jca.ComplexPropertiesParseUtils.raAdminProperties;
-import static org.jboss.as.test.integration.management.jca.ComplexPropertiesParseUtils.raCommonProperties;
-import static org.jboss.as.test.integration.management.jca.ComplexPropertiesParseUtils.raConnectionProperties;
-import static org.jboss.as.test.integration.management.jca.ComplexPropertiesParseUtils.setOperationParams;
+import static org.jboss.as.test.integration.management.util.ComplexPropertiesParseUtils.setOperationParams;
+import static org.jboss.as.test.integration.management.util.ComplexPropertiesParseUtils.raCommonProperties;
+import static org.jboss.as.test.integration.management.util.ComplexPropertiesParseUtils.raConnectionProperties;
+import static org.jboss.as.test.integration.management.util.ComplexPropertiesParseUtils.raAdminProperties;
+import static org.jboss.as.test.integration.management.util.ComplexPropertiesParseUtils.checkModelParams;
 
 import org.jboss.as.connector.subsystems.resourceadapters.Namespace;
 import org.jboss.as.connector.subsystems.resourceadapters.ResourceAdaptersExtension.ResourceAdapterSubsystemParser;
@@ -52,14 +52,6 @@ import org.junit.After;
 import org.junit.Test;
 import org.junit.Ignore;
 import org.junit.runner.RunWith;
-
-import static org.jboss.as.controller.descriptions.ModelDescriptionConstants.OP;
-import static org.jboss.as.controller.descriptions.ModelDescriptionConstants.OP_ADDR;
-import static org.jboss.as.test.integration.management.jca.ComplexPropertiesParseUtils.checkModelParams;
-import static org.jboss.as.test.integration.management.jca.ComplexPropertiesParseUtils.raAdminProperties;
-import static org.jboss.as.test.integration.management.jca.ComplexPropertiesParseUtils.raCommonProperties;
-import static org.jboss.as.test.integration.management.jca.ComplexPropertiesParseUtils.raConnectionProperties;
-import static org.jboss.as.test.integration.management.jca.ComplexPropertiesParseUtils.setOperationParams;
 
 
 /**

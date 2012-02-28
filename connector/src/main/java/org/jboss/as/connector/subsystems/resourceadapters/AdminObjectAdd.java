@@ -22,7 +22,6 @@
 
 package org.jboss.as.connector.subsystems.resourceadapters;
 
-import static org.jboss.as.connector.ConnectorLogger.SUBSYSTEM_RA_LOGGER;
 import static org.jboss.as.connector.subsystems.resourceadapters.ResourceAdaptersSubsystemProviders.ADD_ADMIN_OBJECT_DESC;
 import static org.jboss.as.connector.subsystems.resourceadapters.ResourceAdaptersSubsystemProviders.ADMIN_OBJECTS_NODEATTRIBUTE;
 import static org.jboss.as.controller.descriptions.ModelDescriptionConstants.OP_ADDR;
@@ -40,7 +39,6 @@ import org.jboss.as.controller.ServiceVerificationHandler;
 import org.jboss.as.controller.SimpleAttributeDefinition;
 import org.jboss.as.controller.descriptions.DescriptionProvider;
 import org.jboss.dmr.ModelNode;
-import org.jboss.jca.common.api.validator.ValidateException;
 import org.jboss.msc.service.ServiceController;
 import org.jboss.msc.service.ServiceName;
 import org.jboss.msc.service.ServiceTarget;
@@ -83,12 +81,7 @@ public class AdminObjectAdd extends AbstractAddStepHandler implements Descriptio
         final String poolName = PathAddress.pathAddress(address).getLastElement().getValue();
 
 
-        final ModifiableAdminObject adminObjectValue;
-        try {
-            adminObjectValue = RaOperationUtil.buildAdminObjects(context, operation, poolName);
-        } catch (ValidateException e) {
-            throw new OperationFailedException(e.getMessage(), e);
-        }
+        final ModifiableAdminObject adminObjectValue = RaOperationUtil.buildAdminObjects(context, operation, poolName);
 
 
         ServiceName serviceName = ServiceName.of(ConnectorServices.RA_SERVICE, archiveName, poolName);

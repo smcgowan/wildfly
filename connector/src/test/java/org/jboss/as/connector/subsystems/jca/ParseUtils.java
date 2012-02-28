@@ -164,6 +164,8 @@ public class ParseUtils {
         params.put("wrap-xa-resource","true");
         //security
         params.put("security-application","true");
+        params.put("security-domain-and-application","HsqlDbRealm1");
+        params.put("security-domain","HsqlDbRealm");
         //validation
         params.put("background-validation","true");
         params.put("background-validation-millis","5000");
