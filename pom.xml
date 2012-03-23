@@ -402,7 +402,6 @@
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>xml-maven-plugin</artifactId>
-                    <version>${version.xml.maven.plugin}</version>
                 </plugin>
             </plugins>
         </pluginManagement>
