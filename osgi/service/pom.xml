@@ -74,6 +74,10 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
+            <groupId>org.jboss.osgi.deployment</groupId>
+            <artifactId>jbosgi-deployment</artifactId>
+        </dependency>
+        <dependency>
             <groupId>org.jboss.osgi.framework</groupId>
             <artifactId>jbosgi-framework-core</artifactId>
         </dependency>
@@ -86,6 +90,10 @@
             <artifactId>jbosgi-resolver-api</artifactId>
         </dependency>
         <dependency>
+            <groupId>org.jboss.osgi.resolver</groupId>
+            <artifactId>jbosgi-resolver-felix</artifactId>
+        </dependency>
+        <dependency>
             <groupId>org.jboss.osgi.repository</groupId>
             <artifactId>jbosgi-repository-api</artifactId>
         </dependency>
@@ -96,6 +104,10 @@
         <dependency>
             <groupId>org.jboss.osgi.spi</groupId>
             <artifactId>jbosgi-spi</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.osgi.vfs</groupId>
+            <artifactId>jbosgi-vfs</artifactId>
         </dependency>
         <dependency>
             <groupId>org.osgi</groupId>
