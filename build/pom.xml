@@ -243,6 +243,16 @@
                 </dependency>
 
                 <dependency>
+                    <groupId>com.sun.istack</groupId>
+                    <artifactId>istack-commons-runtime</artifactId>
+                </dependency>
+
+                <dependency>
+                    <groupId>com.sun.istack</groupId>
+                    <artifactId>istack-commons-tools</artifactId>
+                </dependency>
+
+                <dependency>
                     <groupId>com.sun.xml.bind</groupId>
                     <artifactId>jaxb-impl</artifactId>
                 </dependency>
@@ -255,6 +265,11 @@
                 <dependency>
                     <groupId>com.sun.xml.messaging.saaj</groupId>
                     <artifactId>saaj-impl</artifactId>
+                </dependency>
+
+                <dependency>
+                    <groupId>com.sun.xml.txw2</groupId>
+                    <artifactId>txw2</artifactId>
                 </dependency>
 
                 <dependency>
