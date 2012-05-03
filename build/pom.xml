@@ -238,6 +238,11 @@
                 </dependency>
 
                 <dependency>
+                    <groupId>com.sun.codemodel</groupId>
+                    <artifactId>codemodel</artifactId>
+                </dependency>
+
+                <dependency>
                     <groupId>com.sun.faces</groupId>
                     <artifactId>jsf-impl</artifactId>
                 </dependency>
