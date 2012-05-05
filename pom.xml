@@ -4293,6 +4293,10 @@
                 <classifier>resources</classifier>
                 <exclusions>
                     <exclusion>
+                        <groupId>com.google.gwt</groupId>
+                        <artifactId>gwt-user</artifactId>
+                    </exclusion>
+                    <exclusion>
                         <groupId>com.google.gwt.inject</groupId>
                         <artifactId>gin</artifactId>
                     </exclusion>
@@ -4303,6 +4307,10 @@
                     <exclusion>
                         <groupId>com.gwtplatform</groupId>
                         <artifactId>gwtp-all</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>com.gwtplatform</groupId>
+                        <artifactId>gwtp-clients-common</artifactId>
                     </exclusion>
                     <exclusion>
                         <groupId>com.google.code</groupId>
@@ -4319,6 +4327,14 @@
                     <exclusion>
                         <groupId>com.mycila.com.google.inject.extensions</groupId>
                         <artifactId>guice-assisted-inject</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.jboss.as</groupId>
+                        <artifactId>console-spi</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.jboss.ballroom</groupId>
+                        <artifactId>widgets</artifactId>
                     </exclusion>
                 </exclusions>
             </dependency>
