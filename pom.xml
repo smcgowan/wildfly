@@ -5647,56 +5647,10 @@
                 <version>${version.org.jboss.ws.jbossws-native}</version>
                 <exclusions>
                     <exclusion>
-                        <groupId>com.sun.xml.fastinfoset</groupId>
-                        <artifactId>FastInfoset</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>com.sun.xml.ws</groupId>
-                        <artifactId>jaxws-rt</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>com.sun.xml.ws</groupId>
-                        <artifactId>jaxws-tools</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>commons-logging</groupId>
-                        <artifactId>commons-logging</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>javassist</groupId>
-                        <artifactId>javassist</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>javax.xml.stream</groupId>
-                        <artifactId>stax-api</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>org.apache</groupId>
-                        <artifactId>xmlsec</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>org.codehaus.jettison</groupId>
-                        <artifactId>jettison</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>org.codehaus.woodstox</groupId>
-                        <artifactId>wstx-lgpl</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>stax</groupId>
-                        <artifactId>stax-api</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>ws-commons</groupId>
-                        <artifactId>policy</artifactId>
+                        <groupId>javax.servlet</groupId>
+                        <artifactId>servlet-api</artifactId>
                     </exclusion>
                </exclusions>
-            </dependency>
-
-            <dependency>
-                <groupId>org.jboss.ws.native</groupId>
-                <artifactId>jbossws-native-factories</artifactId>
-                <version>${version.org.jboss.ws.jbossws-native}</version>
             </dependency>
 
             <dependency>
