@@ -1,8 +1,6 @@
 AS7 testsuite
 --------------
 
-This directory contains the AS7 testsuite in its new format, as described in https://docspace.corp.redhat.com/docs/DOC-74146
-
 Some points to note:
 
 

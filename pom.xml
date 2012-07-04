@@ -54,6 +54,7 @@
 
     <properties>
          <!-- Release Info -->
+        <jboss.eap.release.version>6.1.0.DR1</jboss.eap.release.version>
         <jboss.as.release.version>${project.version}</jboss.as.release.version>
         <jboss.as.release.codename>Steropes</jboss.as.release.codename>
         <jboss.as.scm.url>https://github.com/jbossas/jboss-as</jboss.as.scm.url>

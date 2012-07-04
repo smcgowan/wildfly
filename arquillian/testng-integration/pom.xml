@@ -36,7 +36,7 @@
     <packaging>jar</packaging>
 
     <properties>
-        <jboss.home>${project.basedir}/../../build/target/jboss-as-${jboss.as.release.version}</jboss.home>
+        <jboss.home>${project.basedir}/../../build/target/jboss-eap-6.1</jboss.home>
     </properties>
 
     <dependencies>
@@ -77,7 +77,7 @@
                             <goal>copy-resources</goal>
                         </goals>
                         <configuration>
-                            <outputDirectory>${basedir}/target/jbossas</outputDirectory>
+                            <outputDirectory>${basedir}/target/jboss-eap-6.1</outputDirectory>
                             <overwrite>true</overwrite>
                             <resources>
                                 <resource>
@@ -103,7 +103,7 @@
                         </property>
                         <property>
                           <name>jboss.home</name>
-                          <value>${basedir}/target/jbossas</value>
+                          <value>${basedir}/target/jboss-eap-6.1</value>
                         </property>
                         <property>
                           <name>module.path</name>

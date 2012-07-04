@@ -123,13 +123,13 @@
                         <configuration>
                             <transformationSets>
                                 <transformationSet>
-                                    <dir>${basedir}/target/jbossas/standalone/configuration</dir>
+                                    <dir>${basedir}/target/jboss-eap-6.1/standalone/configuration</dir>
                                     <skipDefaultExcludes>true</skipDefaultExcludes>
                                     <includes>
                                         <include>standalone*.xml</include>
                                     </includes>
                                     <stylesheet>${basedir}/src/test/xslt/passwdMaskConfig.xsl</stylesheet>
-                                    <outputDir>${basedir}/target/jbossas/standalone/configuration</outputDir>
+                                    <outputDir>${basedir}/target/jboss-eap-6.1/standalone/configuration</outputDir>
                                     <parameters>
                                         <parameter>
                                             <name>keystore</name>
@@ -206,7 +206,7 @@
                                     <!-- Parameters to test cases. -->
                                     <systemPropertyVariables>
                                         <jboss.server.config.file.name>standalone-full.xml</jboss.server.config.file.name>
-                                        <jboss.inst>${basedir}/target/jbossas</jboss.inst>
+                                        <jboss.inst>${basedir}/target/jboss-eap-6.1</jboss.inst>
                                         <!-- Needed for the IIOP tests-->
                                         <com.sun.CORBA.ORBUseDynamicStub>true</com.sun.CORBA.ORBUseDynamicStub>
                                     </systemPropertyVariables>
@@ -254,7 +254,7 @@
                                     <!-- Parameters to test cases. -->
                                     <systemPropertyVariables>
                                         <jboss.server.config.file.name>standalone.xml</jboss.server.config.file.name>
-                                        <jboss.inst>${basedir}/target/jbossas</jboss.inst>
+                                        <jboss.inst>${basedir}/target/jboss-eap-6.1</jboss.inst>
                                     </systemPropertyVariables>
 
                                     <additionalClasspathElements>
@@ -295,7 +295,7 @@
                                     
                                     <systemPropertyVariables>
                                         <jboss.server.config.file.name>standalone.xml</jboss.server.config.file.name>
-                                        <jboss.inst>${basedir}/target/jbossas</jboss.inst>
+                                        <jboss.inst>${basedir}/target/jboss-eap-6.1</jboss.inst>
                                     </systemPropertyVariables>
 
                                     <additionalClasspathElements>

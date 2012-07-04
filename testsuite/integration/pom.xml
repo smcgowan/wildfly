@@ -35,7 +35,7 @@
         </jvm.args.dirs>
 
         <!-- Used to provide an absolute location for the distribution under test. -->
-        <jboss.dist>${jbossas.project.dir}/build/target/jboss-as-${jboss.as.release.version}</jboss.dist>
+        <jboss.dist>${jbossas.project.dir}/build/target/jboss-eap-6.1</jboss.dist>
         <jboss.home>${jboss.dist}</jboss.home>
 
         <!-- Used to provide an absolute location for the XSLT scripts. -->
@@ -197,7 +197,7 @@
                         <goals><goal>copy-resources</goal></goals>
                         <inherited>true</inherited>
                         <configuration>
-                            <outputDirectory>${basedir}/target/jbossas/standalone/configuration</outputDirectory>
+                            <outputDirectory>${basedir}/target/jboss-eap-6.1/standalone/configuration</outputDirectory>
                             <overwrite>true</overwrite>
                             <resources>
                                 <resource>
@@ -206,7 +206,7 @@
                                 </resource>
                                 <resource>
                                     <!-- Add the XTS config to the standalone/config directory, so it will be processed as well -->
-                                    <directory>${basedir}/target/jbossas/docs/examples/configs</directory>
+                                    <directory>${basedir}/target/jboss-eap-6.1/docs/examples/configs</directory>
                                     <includes><include>standalone-xts.xml</include></includes>
                                 </resource>
                             </resources>

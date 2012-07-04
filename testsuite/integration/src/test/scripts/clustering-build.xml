@@ -13,7 +13,7 @@
 
         <echo message="  =========  Building config clustering-${cacheMode}-${stack}-0  =========  "/>
         <copy todir="target/jbossas-clustering-${cacheMode}-${stack}-0" overwrite="true">
-            <fileset dir="${basedir}/target/jbossas"/>
+            <fileset dir="${basedir}/target/jboss-eap-6.1"/>
         </copy>
         <ts.config-as.ip-with-multicast name="jbossas-clustering-${cacheMode}-${stack}-0"
                                         node="${node0}"
@@ -29,7 +29,7 @@
 
         <echo message="  =========  Building config clustering-${cacheMode}-${stack}-1  =========  "/>
         <copy todir="target/jbossas-clustering-${cacheMode}-${stack}-1" overwrite="true">
-            <fileset dir="${basedir}/target/jbossas"/>
+            <fileset dir="${basedir}/target/jboss-eap-6.1"/>
         </copy>
         <ts.config-as.ip-with-multicast name="jbossas-clustering-${cacheMode}-${stack}-1"
                                         node="${node1}"
@@ -75,7 +75,7 @@
         <echo message="Building config clustering-udp-jdbc-store"/>
         <echo>clustering-udp-jdbc-store node0: ${node0}</echo>
         <copy todir="target/jbossas-clustering-udp-jdbc-store" overwrite="true">
-            <fileset dir="${basedir}/target/jbossas"/>
+            <fileset dir="${basedir}/target/jboss-eap-6.1"/>
         </copy>
         <ts.config-as.add-cache-container name="jbossas-clustering-udp-jdbc-store" containerdef="${cache.container.def}" />
         <ts.config-as.ip-with-multicast name="jbossas-clustering-udp-jdbc-store"

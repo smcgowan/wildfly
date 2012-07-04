@@ -87,7 +87,7 @@
 
         <!-- Used to provide an absolute location for the distribution under test. -->
         <!-- This value is overridden in modules with the correct relative pathname. -->
-        <jboss.dist>${project.basedir}/../build/target/jboss-as-${jboss.as.release.version}</jboss.dist>
+        <jboss.dist>${project.basedir}/../build/target/jboss-eap-6.1</jboss.dist>
         <jboss.home>${jboss.dist}</jboss.home>
 
         <!-- Used to provide an absolute location for the XSLT scripts. -->
@@ -135,7 +135,7 @@
         <ds.jdbc.driver.jar>${ds.db}-jdbc-driver.jar</ds.jdbc.driver.jar>
         <ds.module.path></ds.module.path>
         <ds.isModule>false</ds.isModule>
-        <ds.jdbc.driver.target.path>${basedir}/target/jbossas/standalone/deployments</ds.jdbc.driver.target.path>
+        <ds.jdbc.driver.target.path>${basedir}/target/jboss-eap-6.1/standalone/deployments</ds.jdbc.driver.target.path>
 
         <!-- Common surefire properties. -->
         <surefire.memory.args>-Xmx512m -XX:MaxPermSize=256m</surefire.memory.args>
@@ -340,7 +340,7 @@
                         <phase>generate-test-resources</phase>
                         <goals><goal>copy-resources</goal></goals>
                         <configuration>
-                            <outputDirectory>${basedir}/target/jbossas</outputDirectory>
+                            <outputDirectory>${basedir}/target/jboss-eap-6.1</outputDirectory>
                             <overwrite>true</overwrite>
                             <resources>
                                 <resource>
@@ -375,8 +375,8 @@
                             <transformationSets>
                                 <!-- IPs. -->
                                 <transformationSet>
-                                    <dir>${basedir}/target/jbossas/standalone/configuration</dir>
-                                    <outputDir>${basedir}/target/jbossas/standalone/configuration</outputDir>
+                                    <dir>${basedir}/target/jboss-eap-6.1/standalone/configuration</dir>
+                                    <outputDir>${basedir}/target/jboss-eap-6.1/standalone/configuration</outputDir>
                                     <stylesheet>${xslt.scripts.dir}/changeIPAddresses.xsl</stylesheet>
                                     <includes>
                                         <include>standalone*.xml</include>
@@ -402,8 +402,8 @@
                             <transformationSets>
                                 <!-- IPs. -->
                                 <transformationSet>
-                                    <dir>${basedir}/target/jbossas/standalone/configuration</dir>
-                                    <outputDir>${basedir}/target/jbossas/standalone/configuration</outputDir>
+                                    <dir>${basedir}/target/jboss-eap-6.1/standalone/configuration</dir>
+                                    <outputDir>${basedir}/target/jboss-eap-6.1/standalone/configuration</outputDir>
                                     <stylesheet>${xslt.scripts.dir}/enableTrace.xsl</stylesheet>
                                     <includes>
                                         <include>standalone*.xml</include>
@@ -432,7 +432,7 @@
                         <jboss.options>${surefire.system.args} ${jvm.args.jacoco}</jboss.options>
                         <java.util.logging.manager>org.jboss.logmanager.LogManager</java.util.logging.manager>
                         <jboss.dist>${jboss.dist}</jboss.dist>
-                        <jboss.home>${basedir}/target/jbossas</jboss.home>
+                        <jboss.home>${basedir}/target/jboss-eap-6.1</jboss.home>
                         <module.path>${jboss.dist}/modules${path.separator}${basedir}/target/modules</module.path>
                         <bundle.path>${jboss.dist}/bundles</bundle.path>
                     </systemPropertyVariables>
@@ -860,8 +860,8 @@
                                 <configuration>
                                     <transformationSets>
                                         <transformationSet>
-                                            <dir      >${basedir}/target/jbossas/standalone/configuration</dir>
-                                            <outputDir>${basedir}/target/jbossas/standalone/configuration</outputDir>
+                                            <dir      >${basedir}/target/jboss-eap-6.1/standalone/configuration</dir>
+                                            <outputDir>${basedir}/target/jboss-eap-6.1/standalone/configuration</outputDir>
                                             <stylesheet>${xslt.scripts.dir}/changeDatabase.xsl</stylesheet>
                                             <includes>
                                                 <include>standalone*.xml</include>

@@ -4,7 +4,7 @@
 
 	<container qualifier="jboss" default="true">
 		<configuration>
-			<property name="jbossHome">target/jbossas</property>
+			<property name="jbossHome">target/jboss-eap-6.1</property>
 		</configuration>
 	</container>
 </arquillian>
