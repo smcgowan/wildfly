@@ -73,6 +73,11 @@
 
         <dependency>
             <groupId>org.wildfly</groupId>
+            <artifactId>wildfly-el</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.wildfly</groupId>
             <artifactId>wildfly-security</artifactId>
         </dependency>
 

@@ -1002,6 +1002,11 @@
 
                 <dependency>
                     <groupId>org.wildfly</groupId>
+                    <artifactId>wildfly-el</artifactId>
+                </dependency>
+
+                <dependency>
+                    <groupId>org.wildfly</groupId>
                     <artifactId>wildfly-embedded</artifactId>
                 </dependency>
 
@@ -1552,11 +1557,6 @@
                 <dependency>
                     <groupId>org.jboss.spec.javax.ejb</groupId>
                     <artifactId>jboss-ejb-api_3.2_spec</artifactId>
-                </dependency>
-
-                <dependency>
-                    <groupId>org.jboss.spec.javax.el</groupId>
-                    <artifactId>jboss-el-api_2.2_spec</artifactId>
                 </dependency>
 
                 <dependency>

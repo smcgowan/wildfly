@@ -449,10 +449,6 @@
             <maven-resource group="org.jboss.spec.javax.ejb" artifact="jboss-ejb-api_3.2_spec"/>
         </module-def>
 
-        <module-def name="javax.el.api">
-            <maven-resource group="org.jboss.spec.javax.el" artifact="jboss-el-api_2.2_spec"/>
-        </module-def>
-
         <module-def name="javax.enterprise.api">
             <maven-resource group="javax.enterprise" artifact="cdi-api"/>
         </module-def>
@@ -898,6 +894,10 @@
 
         <module-def name="org.jboss.as.ejb3">
             <maven-resource group="org.wildfly" artifact="wildfly-ejb3"/>
+        </module-def>
+
+        <module-def name="org.wildfly.el">
+            <maven-resource group="org.wildfly" artifact="wildfly-el"/>
         </module-def>
 
         <module-def name="org.jboss.as.host-controller">

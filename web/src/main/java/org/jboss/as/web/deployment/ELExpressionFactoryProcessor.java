@@ -38,7 +38,7 @@ import org.jboss.as.server.deployment.DeploymentUnitProcessingException;
 import org.jboss.as.server.deployment.DeploymentUnitProcessor;
 import org.jboss.as.server.deployment.ServicesAttachment;
 import org.jboss.as.web.WebLogger;
-import org.jboss.el.cache.FactoryFinderCache;
+import org.wildfly.el.cache.FactoryFinderCache;
 import org.jboss.modules.Module;
 
 /**
